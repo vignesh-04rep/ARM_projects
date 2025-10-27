@@ -1,1 +1,6 @@
 
+📘 Project Overview
+This embedded systems project demonstrates real-time data transmission and display using UART communication integrated with an LCD module on the LPC2129 ARM7 microcontroller. 
+Designed for hands-on learning and industry-ready implementation, the code handles UART initialization, interrupt-driven data reception, and dynamic LCD updates. 
+It showcases efficient register-level programming, interrupt handling, and peripheral interfacing — making it a valuable reference for embedded developers working with ARM architecture and Proteus simulation. 
+Ideal for showcasing microcontroller proficiency in placement portfolios or technical interviews.
