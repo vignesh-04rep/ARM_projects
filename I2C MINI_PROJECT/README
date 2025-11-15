@@ -1,0 +1,51 @@
+I2C Smart Street Light Monitoring with Vehicle Count
+🔧 Project Overview
+This project implements a smart street lighting system using I2C communication, an LDR sensor, and EEPROM for data logging. It automatically controls street lights based on ambient light and vehicle presence, while storing usage statistics for later analysis.
+
+⚙️ Features
+Ambient Light Detection: LDR + I2C ADC (ADS1115) measures brightness to switch lights ON/OFF.
+
+Vehicle Counting: IR sensor (or PIR/ultrasonic) detects passing vehicles; counts are logged.
+
+Smart Lighting Control:
+
+Lights OFF during daytime.
+
+Dim mode at night.
+
+Boost brightness when vehicles are detected.
+
+Data Logging: I2C EEPROM (24LC256) stores events: vehicle counts, light ON/OFF, ambient readings.
+
+Scalable I2C Bus: Supports multiple sensors, RTC for timestamps, and expanders for more inputs.
+
+🛠️ Hardware Used
+Microcontroller (Arduino/ARM/STM32)
+
+LDR sensor (ambient light)
+
+IR/PIR/Ultrasonic sensor (vehicle detection)
+
+ADS1115 (I2C ADC)
+
+24LC256 EEPROM (I2C)
+
+MOSFET/LED driver for street light control
+
+📊 Workflow
+MCU reads ambient light via I2C ADC.
+
+If night → lights enter dim mode.
+
+Vehicle detected → lights switch to boost mode for a short duration.
+
+Events logged into EEPROM with timestamp.
+
+Data can be retrieved for analysis (traffic density, energy usage).
+
+🚀 Applications
+Energy‑efficient smart street lighting
+
+Traffic monitoring and analytics
+
+Scalable IoT‑ready infrastructure
